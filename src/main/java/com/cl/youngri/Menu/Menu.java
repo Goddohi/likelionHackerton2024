@@ -1,7 +1,6 @@
-package Menu;
+package com.cl.youngri.Menu;
 
-import Member.Member;
-import Store.Store;
+import com.cl.youngri.Store.Store;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

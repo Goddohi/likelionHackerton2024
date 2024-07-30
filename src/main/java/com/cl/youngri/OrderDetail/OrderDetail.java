@@ -1,7 +1,7 @@
-package OrderDetail;
+package com.cl.youngri.OrderDetail;
 
-import Menu.Menu;
-import Order.Order;
+import com.cl.youngri.Menu.Menu;
+import com.cl.youngri.Order.Order;
 import jakarta.persistence.*;
 @Entity
 public class OrderDetail {
