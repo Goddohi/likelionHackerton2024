@@ -2,6 +2,7 @@ package Order;
 
 import Member.Member;
 import Menu.Menu;
+import OrderDetail.OrderDetail;
 import Store.Store;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -36,7 +37,10 @@ public class Order {
     @JoinColumn(name = "storeId", nullable = false)
     private Store store;
 
-    private int quantity;
+    @ManyToOne
+    @JoinColumn(name = "orderDetailId", nullable = false)
+    private OrderDetail orderDetail;
+
     private double calories;
     private double time;
     private String paymentMethod;

@@ -1,10 +1,8 @@
 package Menu;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
+import Member.Member;
+import Store.Store;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,4 +19,8 @@ public class Menu {
     private String menuName;
 
     private double price;
+
+    @ManyToOne
+    @JoinColumn(name = "storeId", nullable = false)
+    private Store store;
 }

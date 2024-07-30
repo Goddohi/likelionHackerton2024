@@ -22,6 +22,6 @@ public class Member {
 
     private String password;
 
-    private int number;
+    private String number;
 }
 

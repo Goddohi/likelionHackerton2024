@@ -29,7 +29,4 @@ public class Store {
     @Column(nullable = false)
     private String category;
 
-    @ManyToOne
-    @JoinColumn(name = "menuName", referencedColumnName = "menuName", nullable = false)
-    private Menu menu;
 }
