@@ -1,4 +1,4 @@
-package Member;
+package com.cl.youngri.Store;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,17 +11,19 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Member {
+public class Store {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberId;
+    private Long storeId;
 
-    @Column(unique = true, nullable = false)
-    private String username;
+    @Column(nullable = false)
+    private String storeName;
 
-    private String password;
+    @Column(nullable = false)
+    private String storePhoneNumber;
 
-    private String number;
+    @Column(nullable = false)
+    private String category;
+
 }
-
