@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class YoungriApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(YoungriApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(YoungriApplication.class, args);
+    }
 
 }

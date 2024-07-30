@@ -1,9 +1,9 @@
-package Order;
+package com.cl.youngri.Order;
 
-import Member.Member;
-import Menu.Menu;
-import OrderDetail.OrderDetail;
-import Store.Store;
+import com.cl.youngri.Member.Member;
+import com.cl.youngri.Menu.Menu;
+import com.cl.youngri.OrderDetail.OrderDetail;
+import com.cl.youngri.Store.Store;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

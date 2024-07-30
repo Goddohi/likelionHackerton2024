@@ -1,4 +1,4 @@
-package Member;
+package com.cl.youngri.Member;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
