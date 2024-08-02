@@ -22,5 +22,5 @@ public class MemberForm {
     private String password2;
 
     @NotEmpty(message = "전화번호는 필수항목입니다.")
-    private String number;
+    private String phonenum;
 }

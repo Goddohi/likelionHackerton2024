@@ -15,13 +15,13 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberId;
+    private String memberId;
 
     @Column(unique = true, nullable = false)
     private String username;
-
+    @Column (name = "member_PW")
     private String password;
-
-    private String number;
+    @Column (name = "member_PN")
+    private String phonenum;
 }
 

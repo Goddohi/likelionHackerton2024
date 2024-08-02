@@ -38,7 +38,7 @@ public class Order {
     private Store store;
 
     @ManyToOne
-    @JoinColumn(name = "orderDetailId", nullable = false)
+    @JoinColumn(name = "orderDetail_Id", nullable = false)
     private OrderDetail orderDetail;
 
     private double calories;

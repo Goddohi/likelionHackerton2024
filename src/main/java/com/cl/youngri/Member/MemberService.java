@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 public class MemberService {
 
     @Autowired
-    MemberRepositroy memberRepositroy;
+    MemberRepository memberRepository;
 
     public Member save(Member request){
-        return memberRepositroy.save(request);
+        return memberRepository.save(request);
     }
 
     public Member create (Member member){
