@@ -20,7 +20,7 @@
     height: 290px;
     top: 522px;
     left: 0;
-    background-image: url(./image/image\ 1.png);
+    background-image: url(/src/main/resources/static/image/image1.png);
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -37,8 +37,7 @@
     position: relative;
     height: 74px;
     top: -1px;
-    background-image: url(./image/Rectangle\ 17.png);
-    background-size: 100% 100%;
+
   }
   
   .screen .icon {
@@ -125,7 +124,7 @@
     top: 5px;
     
     right: 20px;
-    background-image: url(./image/Rectangle1.png);
+    background-image: url(/src/main/resources/static/image/Rectangle1.png);
     background-size: 100% 100%;
     border: 1px solid #ccc; /* 테두리를 추가해보세요 */
     background-color: #fff; /* 배경 색을 추가 */
@@ -175,7 +174,7 @@
     height: 33px;
     top: 5px;
     left: 257px;
-    background-image: url(./image/Rectangle\ 2.png);
+    background-image: url(/src/main/resources/static/image/Rectangle2.png);
     background-size: 100% 100%;
     cursor: pointer;
   }

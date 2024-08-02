@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+
     const searchElements = document.querySelectorAll('.overlap');
     const deleteElements = document.querySelectorAll('.delete');
-    const navigateElements = document.querySelectorAll('.navigate');
+    const backElements=document.querySelectorAll('.image')
+    
 
     // 검색 요소에 클릭 이벤트 리스너를 추가
     searchElements.forEach(element => {
@@ -38,11 +39,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    // navigateElements에 클릭 이벤트 리스너를 추가
-    navigateElements.forEach(element => {
+backElements.forEach(element => {
         element.addEventListener('click', () => {
-            const targetPage = element.getAttribute('data-target');
-            window.location.href = targetPage;
+            window.location.href = 'main.html';
+            // 여기에 원하는 다른 동작을 추가할 수 있습니다.
         });
     });
-});

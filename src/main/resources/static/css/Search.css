@@ -42,7 +42,7 @@
     top: 5px;
     
     right: 23px;
-    background-image: url(./image/Rectangle1.png);
+    background-image: url(/src/main/resources/static/image/Rectangle1.png);
     background-size: 100% 100%;
     border: 1px solid #ccc; /* 테두리를 추가해보세요 */
     background-color: #fff; /* 배경 색을 추가 */
