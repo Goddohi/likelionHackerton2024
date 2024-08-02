@@ -1,0 +1,24 @@
+:root {
+    --color-ios-labels-primary: rgba(0, 0, 0, 1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-color-mode="light">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-color-mode="light"] {
+    --color-ios-labels-primary: rgba(0, 0, 0, 1);
+  }
+  
+  [data-color-mode="dark"] {
+    --color-ios-labels-primary: rgba(255, 255, 255, 1);
+  }
+  
