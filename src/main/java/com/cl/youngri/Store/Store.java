@@ -9,8 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Getter  @Setter
 public class Store {
 
     @Id
