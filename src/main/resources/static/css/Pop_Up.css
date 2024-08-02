@@ -1,0 +1,28 @@
+.screen {
+  background-color: #1b1c1e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen .overlap-group-wrapper {
+  background-color: #1b1c1e;
+  overflow: hidden;
+  width: 375px;
+  height: 812px;
+}
+
+.screen .overlap-group {
+  position: relative;
+  height: 813px;
+  background-color: #00000082;
+}
+
+.screen .group {
+  position: absolute;
+  width: 336px;
+  height: 456px;
+  top: 188px;
+  left: 20px;
+}
