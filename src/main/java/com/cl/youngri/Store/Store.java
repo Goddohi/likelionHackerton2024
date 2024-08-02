@@ -9,21 +9,20 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Getter  @Setter
 public class Store {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long storeId;
 
-    @Column(nullable = false)
+    @Column(name = "store_name",nullable = false)
     private String storeName;
 
-    @Column(nullable = false)
+    @Column(name = "store_PN", nullable = false)
     private String storePhoneNumber;
 
-    @Column(nullable = false)
+    @Column(name = "store_category", nullable = false)
     private String category;
 
 }
