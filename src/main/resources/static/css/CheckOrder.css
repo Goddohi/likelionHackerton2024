@@ -38,7 +38,7 @@
   position: relative;
   height: 412px;
   top: -31px;
-  background-image: url(./img/BG.svg);
+  background-image: url(/src/main/resources/static/image/하단\ BG.png);
   background-size: 100% 100%;
 }
 
@@ -248,7 +248,21 @@
   left: 7px;
   background-color: #d9d9d9;
   border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* 자식 요소의 절대 위치를 기준으로 설정 */
 }
+
+
+.screen .ellipse-4 .clock-hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정 가운데 배치 */
+
+}
+
 
 .screen .text-wrapper-7 {
   position: absolute;
@@ -412,7 +426,7 @@
   height: 89px;
   top: 560px;
   left: 18px;
-  background-image: url(./img/rectangle-24.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle24.png);
   background-size: 100% 100%;
 }
 

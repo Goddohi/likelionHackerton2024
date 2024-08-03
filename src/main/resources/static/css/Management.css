@@ -349,7 +349,7 @@
   height: 205px;
   top: 411px;
   left: 20px;
-  background-image: url(./img/rectangle-1371.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle\ 1371.png);
   background-size: 100% 100%;
 }
 
@@ -370,7 +370,7 @@
 }
 
 .screen .text-wrapper-8 {
-  font-size: 15.3px;
+  font-size: 13.3px;
   letter-spacing: -0.09px;
 }
 
@@ -562,7 +562,7 @@
   position: relative;
   width: 162px;
   height: 205px;
-  background-image: url(./img/rectangle-1372.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle\ 1371.png);
   background-size: 100% 100%;
 }
 
