@@ -9,17 +9,16 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
 @Entity
-@Getter  @Setter
+@Getter
+@Setter
 @Builder
+@AllArgsConstructor
 public class Order {
 
     @Id
@@ -34,8 +33,11 @@ public class Order {
     @JoinColumn(name = "store_Id", nullable = false)
     private Store store;
 
+    @Column
     private double calories;
+    @Column
     private double time;
+    @Column
     private String paymentMethod;
 
     @Column(nullable = false)

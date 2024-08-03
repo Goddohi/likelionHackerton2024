@@ -16,15 +16,14 @@ import org.springframework.web.bind.annotation.*;
 //@RestController   // Choi(-)JSON을 이용하려 헀지만 front 협의 이후 타임리프로 전환
 @Controller         // 08.03.2024  Choi(+)JSON을 이용하려 헀지만 front 협의 이후 타임리프로 전환
 
-@RequiredArgsConstructor // Lombok을 사용한 자동 생성자 생성
 public class MemberController {
 
-    private final MemberService memberService;
+    MemberService memberService;
 
 
     /**
      *  작성일 : 08.03.2024
-     *  작성차 choi
+     *  작성자 choi
      *  작성함수  signupForm
      */
     @GetMapping("signup/")
@@ -35,7 +34,7 @@ public class MemberController {
 
     /**
      *  작성일 : 08.03.2024
-     *  작성차 choi
+     *  작성자 choi
      *  작성함수  signup
      */
 
