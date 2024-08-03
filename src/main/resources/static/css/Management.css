@@ -707,3 +707,33 @@
   top: 738px;
   left: 0;
 }
+
+.button {
+  position: absolute;
+  bottom: 22px; /* 부모 요소의 아래쪽에서 20px 위로 이동 */
+  
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover; /* 이미지를 버튼 전체에 맞게 조정 */
+  background-position: center; /* 이미지를 버튼 중앙에 위치시킴 */
+  
+  
+}
+
+.left-button {
+  background-image: url(/src/main/resources/static/image/IconHome.png);
+  background-size: 100% 100%;
+  left: 101.5px; 
+  /* 부모 요소의 왼쪽에서 20px 오른쪽으로 이동 */
+  width: 28.8px;
+  height: 28.8px;
+}
+
+.right-button {
+  right: 102px; /* 부모 요소의 오른쪽에서 20px 왼쪽으로 이동 */
+  width: 23.5px;
+  height: 30px;
+  background-image: url(/src/main/resources/static/image/IconManager.png);
+}
