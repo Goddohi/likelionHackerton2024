@@ -2,10 +2,13 @@ package com.cl.youngri.OrderDetail;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter @Setter
 public class OrderDetailForm {
     @NotNull
-    private Long menuId;
+    private int menuId;
 
     @NotNull
     private Long orderId;

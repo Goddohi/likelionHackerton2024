@@ -1,5 +1,8 @@
-package com.cl.youngri.Member;
+package com.cl.youngri.Controller;
 
+import com.cl.youngri.Member.Member;
+import com.cl.youngri.Member.MemberForm;
+import com.cl.youngri.Member.MemberService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
