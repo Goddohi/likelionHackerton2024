@@ -27,26 +27,25 @@ public class MemberService {
     public Member save(Member request){
         return memberRepository.save(request);
     }
-/*
-    public Member create (Member member){
-        return member;
-    }
-*/
-public Member save(MemberForm request){
-    if (memberRepository.findByMemberId(request.getMemberId()).isEmpty()){
-                Member member = Member.builder()
-                                        .memberId(request.getMemberId())
-                                        .username(request.getUsername())
-                                        .password(request.getPassword())
-                                        .phonenum(request.getPhonenum()).build();
-        return memberRepository.save(member);
-    }
-    return null;
+    /*
+        public Member create (Member member){
+            return member;
+        }
+    */
+    public Member save(MemberForm request){
+        if (memberRepository.findByMemberId(request.getMemberId()).isEmpty()){
+            Member member = Member.builder()
+                    .memberId(request.getMemberId())
+                    .username(request.getUsername())
+                    .password(request.getPassword())
+                    .phonenum(request.getPhonenum()).build();
+            return memberRepository.save(member);
+        }
+        return null;
     }
 
 
     public Optional<Member> findMemberByStudenid(String memberid) {
         return memberRepository.findByMemberId(memberid);
     }
-    }
-
+}
