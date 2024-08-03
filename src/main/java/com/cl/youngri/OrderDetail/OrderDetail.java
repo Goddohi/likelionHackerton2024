@@ -5,18 +5,18 @@ import com.cl.youngri.Menu.Menu;
 import com.cl.youngri.Order.Order;
 import com.cl.youngri.Store.Store;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Entity @Builder
-@Getter @Setter
-@RequiredArgsConstructor
+@Entity
+@Builder
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class OrderDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private Long orderDetailId;
 
     @ManyToOne
@@ -27,6 +27,6 @@ public class OrderDetail {
     @JoinColumn(name = "order_Id", nullable = false)
     private Order order;
 
-
+    @Column
     private int quantity;
 }

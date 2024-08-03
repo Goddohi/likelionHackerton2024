@@ -5,14 +5,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Column;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
-@Getter  @Setter @Builder
-@RequiredArgsConstructor // Lombok을 사용한 자동 생성자 생성
+@Getter
+@Setter
+@Builder
+@RequiredArgsConstructor
+@AllArgsConstructor// Lombok을 사용한 자동 생성자 생성
 public class Member {
 
     @Id
