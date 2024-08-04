@@ -60,20 +60,26 @@ public class MemberController {
         model.addAttribute("loginForm", new LoginForm());
         return "member/login";
     }
-
+    ////
+    //  choi 코멘트: 최대한 작성하신 코드 안 건들였습니다
+    //   디스코드에서 해당코드의 문제점 등을 설명드리겠습니다.
+    //   완벽한 코드가 아니므로 수정및 보안해보셔도 좋습니다. (예외가 있을수도 있습니다.)
+    ////
     public String login(@Valid LoginForm request, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return "member/login";
         }
-        Member member = memberService.findMemberByPassword(request.getPassword());
+
+        Member member = memberService.findMemberByLoginLogic(request.getMemberId(),request.getPassword());
         //memberService.findMemberByStudenid(request.getPassword())) {
-        if (member==null) {  // 08.05 2024 choi 사용하고 있으신 null 사용할수있도록  findMemberByPassword 만들어 드렸습니다.
-            String errortext = "비밀번호가 잘못되었습니다.";
+        if (memberService.findMemberByMemberId(request.getMemberId()).isEmpty()) {
+            String errortext = "아이디가 존재하지 않습니다.";
             model.addAttribute("errortext", errortext);
             return "member/login";
+        } else if (member==null) {// 08.05 2024 choi 사용하고 있으신 null 사용할수있도록  findMemberBy 만들어 드렸습니다.
+            String errortext = "비밀번호가 잘못되엇습니다.";
+            model.addAttribute("errortext", errortext);
         }
-
         return "redirect:/";
-
     }
 }

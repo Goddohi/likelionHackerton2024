@@ -51,9 +51,10 @@ public class MemberService {
     }
     /*
         Choi  오류해결 힘들어하셔서 급히 추가해드렸습니다
+        +)지금보니까 로그인 로직에 사용하시는 거네요 수정및 수정해드리겠습니다.
      */
-    public Member findMemberByPassword(String password) {
-        Optional<Member> member = memberRepository.findByPassword(password);
+    public Member findMemberByLoginLogic(String memberid, String password) {
+        Optional<Member> member = memberRepository.findByMemberIdAndPassword(memberid,password);
         return member.orElse(null);
     }
 }
