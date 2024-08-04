@@ -11,7 +11,6 @@ LeftButtonElements.forEach(element => {
 
 RightButtonElements.forEach(element => {
     element.addEventListener('click', () => {
-        alert('클릭 이벤트가 발생했습니다!');
         // 여기에 원하는 다른 동작을 추가할 수 있습니다.
     });
 });
