@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 375px;
+  margin:0 auto;
 }
 
 .screen .overlap-wrapper {
@@ -38,7 +39,7 @@
   position: relative;
   height: 412px;
   top: -31px;
-  background-image: url(./img/BG.svg);
+  background-image: url(/src/main/resources/static/image/하단\ BG.png);
   background-size: 100% 100%;
 }
 
@@ -144,8 +145,8 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 0;
-  left: 0;
+  top: 4px;
+  left: -5px;
 }
 
 .screen .group-2 {
@@ -234,10 +235,10 @@
 
 .screen .view-4 {
   position: absolute;
-  width: 50px;
+  width: 47px;
   height: 61px;
   top: 0;
-  left: 0;
+  left: 8px;
 }
 
 .screen .ellipse-4 {
@@ -245,10 +246,24 @@
   width: 34px;
   height: 34px;
   top: 0;
-  left: 7px;
+  left: 2px;
   background-color: #d9d9d9;
   border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* 자식 요소의 절대 위치를 기준으로 설정 */
 }
+
+
+.screen .ellipse-4 .clock-hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정 가운데 배치 */
+
+}
+
 
 .screen .text-wrapper-7 {
   position: absolute;
@@ -257,7 +272,7 @@
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
   color: #616161;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: -0.36px;
   line-height: normal;
@@ -308,15 +323,15 @@
   font-family: "Pretendard-Medium", Helvetica;
   font-weight: 500;
   color: #ff5f34;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: -0.36px;
   line-height: normal;
 }
 
 .screen .div-3 {
-  width: 50px;
-  left: 240px;
+  width: 47px;
+  left: 245px;
   position: absolute;
   height: 61px;
   top: 0;
@@ -352,7 +367,7 @@
 .screen .text-wrapper-9 {
   position: absolute;
   top: 74px;
-  left: 151px;
+  left: 115px;
   font-family: "Pretendard-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
@@ -382,7 +397,7 @@
 
 .screen .text-wrapper-10 {
   position: absolute;
-  top: 4px;
+  top: 0px;
   left: 71px;
   font-family: "Pretendard-SemiBold", Helvetica;
   font-weight: 600;
@@ -395,7 +410,7 @@
 
 .screen .text-wrapper-11 {
   position: absolute;
-  top: 37px;
+  top: 25px;
   left: 71px;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
@@ -412,7 +427,7 @@
   height: 89px;
   top: 560px;
   left: 18px;
-  background-image: url(./img/rectangle-24.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle24.png);
   background-size: 100% 100%;
 }
 
@@ -447,8 +462,8 @@
 
 .screen .text-wrapper-13 {
   position: absolute;
-  top: 36px;
-  left: 8px;
+  top: 30px;
+  left: 4px;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
   color: #ff5f34;
@@ -481,8 +496,8 @@
 
 .screen .text-wrapper-15 {
   position: absolute;
-  width: 61px;
-  top: 36px;
+  width: 70px;
+  top: 29px;
   left: 0;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
@@ -515,7 +530,7 @@
 
 .screen .text-wrapper-17 {
   position: absolute;
-  top: 36px;
+  top: 30.5px;
   left: 1px;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
@@ -550,6 +565,7 @@
   height: 22px;
   top: 71px;
   left: 27px;
+  cursor: pointer;
 }
 
 .screen .absolute-wrapper {
@@ -594,8 +610,8 @@
   gap: 10px;
   padding: 13px 30.5px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -40px;
 }
 
 .screen .value {
@@ -620,8 +636,8 @@
   justify-content: center;
   padding: 14px;
   position: absolute;
-  top: 0;
-  left: 280px;
+  top: -13px;
+  left: 270px;
 }
 
 .screen .content-2 {

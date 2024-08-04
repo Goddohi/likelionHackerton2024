@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 .screen .overlap-wrapper {
@@ -103,8 +104,8 @@
 .screen .BG {
   position: absolute;
   width: 375px;
-  height: 350px;
-  top: 462px;
+  height: 359px;
+  top: 453px;
   left: 0;
 }
 
@@ -116,21 +117,20 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.screen .view-2 {
+.screen .image {
   position: absolute;
   width: 61px;
   height: 57px;
   top: 12px;
   left: 12px;
-  background-color: #d9d9d9;
-  border-radius: 8px;
 }
 
 .screen .div-wrapper {
   position: absolute;
-  width: 44px;
+  width: 162px;
   height: 11px;
   top: 20px;
   left: 96px;
@@ -144,13 +144,12 @@
   font-weight: 600;
   color: #ffffff;
   font-size: 16px;
-  text-align: center;
   letter-spacing: 0;
   line-height: 24px;
   white-space: nowrap;
 }
 
-.screen .view-3 {
+.screen .view-2 {
   position: absolute;
   width: 85px;
   height: 15px;
@@ -162,7 +161,7 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -173,16 +172,16 @@
   font-weight: 500;
   color: #ffffff;
   font-size: 15px;
-  text-align: center;
   letter-spacing: -0.3px;
   line-height: 24px;
   position: absolute;
+  text-align: center;
   white-space: nowrap;
 }
 
-.screen .view-4 {
+.screen .view-3 {
   position: absolute;
-  width: 89px;
+  width: 95px;
   height: 16px;
   top: 44px;
   left: 196px;
@@ -192,7 +191,7 @@
   width: 10px;
   height: 16px;
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
 }
 
@@ -217,6 +216,23 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.screen .image-2 {
+  position: absolute;
+  width: 61px;
+  height: 54px;
+  top: 12px;
+  left: 12px;
+}
+
+.screen .view-4 {
+  position: absolute;
+  width: 103px;
+  height: 11px;
+  top: 20px;
+  left: 96px;
 }
 
 .screen .element-4 {
@@ -227,9 +243,10 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.screen .image {
+.screen .image-3 {
   position: absolute;
   width: 61px;
   height: 57px;
@@ -246,19 +263,6 @@
   left: 96px;
 }
 
-.screen .text-wrapper-4 {
-  top: 0;
-  left: 0;
-  font-family: "Pretendard-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  white-space: nowrap;
-}
-
 .screen .view-6 {
   position: absolute;
   width: 84px;
@@ -267,18 +271,26 @@
   left: 96px;
 }
 
-.screen .text-wrapper-5 {
+.screen .text-wrapper-4 {
   top: 2px;
   left: 24px;
   font-family: "Pretendard-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 15px;
-  text-align: center;
   letter-spacing: -0.3px;
   line-height: 24px;
   position: absolute;
+  text-align: center;
   white-space: nowrap;
+}
+
+.screen .view-7 {
+  position: absolute;
+  width: 89px;
+  height: 16px;
+  top: 44px;
+  left: 196px;
 }
 
 .screen .BG-2 {
@@ -289,7 +301,7 @@
   left: 0;
 }
 
-.screen .view-7 {
+.screen .view-8 {
   position: absolute;
   width: 165px;
   height: 47px;
@@ -297,31 +309,31 @@
   left: 107px;
 }
 
-.screen .text-wrapper-6 {
+.screen .text-wrapper-5 {
   top: 34px;
   left: 0;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
   color: #e6e6e6;
   font-size: 18px;
-  text-align: center;
   letter-spacing: -0.36px;
   line-height: 30px;
   position: absolute;
+  text-align: center;
   white-space: nowrap;
 }
 
-.screen .text-wrapper-7 {
+.screen .text-wrapper-6 {
   top: 0;
   left: 50px;
   font-family: "Pretendard-SemiBold", Helvetica;
   font-weight: 600;
   color: #ff5f34;
   font-size: 24px;
-  text-align: center;
   letter-spacing: -0.48px;
   line-height: 30px;
   position: absolute;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -336,22 +348,26 @@
   border: 0.5px solid;
   border-color: #6f6f6f4c;
   box-shadow: 0px 0px 18px #00000026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.screen .image-2 {
-  position: absolute;
-  width: 68px;
-  height: 55px;
+.screen .image-4 {
+
+  width: 150px;
+  height: 150px;
   top: 20px;
   left: 13px;
 }
 
-.screen .image-3 {
+.screen .image-5 {
   position: absolute;
   width: 13px;
   height: 22px;
   top: 71px;
   left: 27px;
+  cursor: pointer;
 }
 
 .screen .absolute-wrapper {
@@ -378,6 +394,7 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  right: 10px;
 }
 
 .screen .content {
@@ -396,8 +413,8 @@
   gap: 10px;
   padding: 13px 30.5px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -6px;
+  left: -25px;
 }
 
 .screen .value {
@@ -422,7 +439,7 @@
   justify-content: center;
   padding: 14px;
   position: absolute;
-  top: 0;
+  top: -9px;
   left: 280px;
 }
 
