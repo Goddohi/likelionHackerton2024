@@ -3,27 +3,24 @@ package com.cl.youngri.Menu;
 import com.cl.youngri.Store.Store;
 import com.cl.youngri.Store.StoreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class MenuService {
-    private final MenuRepository menuRepository;
-    private final StoreRepository storeRepository;
-    @Autowired
-    public MenuService(MenuRepository menuRepository, StoreRepository storeRepository) {
-        this.menuRepository = menuRepository;
-        this.storeRepository = storeRepository;
-    }
+    MenuRepository menuRepository;
+    StoreRepository storeRepository;
+
     @Transactional
     public Menu createMenu(MenuForm menuForm) {
-        Store store = storeRepository.findById(menuForm.getstoreId())
+        Store store = storeRepository.findByStoreId(menuForm.getStoreId())
                 .orElseThrow(() -> new RuntimeException("Store not found"));
 
         Menu menu = new Menu();
-        menu.setMenuName(menuForm.getmenuName());
-        menu.setPrice(menuForm.getprice());
+        menu.setMenuName(menuForm.getMenuName());
+        menu.setPrice(menuForm.getPrice());
         menu.setStoreId(store);
 
         return menuRepository.save(menu);
@@ -42,14 +39,14 @@ public class MenuService {
     @Transactional
     public Menu updateMenu(Long menuId, MenuForm menuForm) {
         Menu menu = menuRepository.findById(menuId)
-                .orElseThrow(() -> new RuntimeException("Menu not found")); // 이 코드 부분이 이해x 기억이 안나요,,
+                .orElseThrow(() -> new RuntimeException("Menu not found"));
 
         Store store = storeRepository.findById(menuForm.getStoreId())
                 .orElseThrow(() -> new RuntimeException("Store not found"));
 
         menu.setMenuName(menuForm.getMenuName());
         menu.setPrice(menuForm.getPrice());
-        menu.setStore(store);
+        menu.setStoreId(store);
 
         return menuRepository.save(menu);
     }
