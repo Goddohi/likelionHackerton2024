@@ -46,7 +46,14 @@ public class MemberService {
     }
 
 
-    public Optional<Member> findMemberByStudenid(String memberid) {
+    public Optional<Member> findMemberByMemberId(String memberid) {
         return memberRepository.findByMemberId(memberid);
+    }
+    /*
+        Choi  오류해결 힘들어하셔서 급히 추가해드렸습니다
+     */
+    public Member findMemberByPassword(String password) {
+        Optional<Member> member = memberRepository.findByPassword(password);
+        return member.orElse(null);
     }
 }

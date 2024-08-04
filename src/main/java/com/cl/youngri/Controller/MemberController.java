@@ -65,12 +65,14 @@ public class MemberController {
         if (result.hasErrors()) {
             return "member/login";
         }
-
-        if (member==null) //memberService.findMemberByStudenid(request.getPassword())) {
+        Member member = memberService.findMemberByPassword(request.getPassword());
+        //memberService.findMemberByStudenid(request.getPassword())) {
+        if (member==null) {  // 08.05 2024 choi 사용하고 있으신 null 사용할수있도록  findMemberByPassword 만들어 드렸습니다.
             String errortext = "비밀번호가 잘못되었습니다.";
             model.addAttribute("errortext", errortext);
             return "member/login";
         }
+
         return "redirect:/";
 
     }

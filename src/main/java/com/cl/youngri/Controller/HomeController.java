@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @Slf4j // Choi(+) 08.04.2024
 public class HomeController {
-
-
-
     /**
      *  작성일 : 08.04.2024
      *  작성자 choi
