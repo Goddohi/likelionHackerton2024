@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 .screen .div {
@@ -55,8 +56,8 @@
   gap: 10px;
   padding: 13px 30.5px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: -43px;
 }
 
 .screen .value {
@@ -81,8 +82,8 @@
   justify-content: center;
   padding: 14px;
   position: absolute;
-  top: 0;
-  left: 280px;
+  top: -12px;
+  left: 270px;
 }
 
 .screen .content-2 {
@@ -349,7 +350,7 @@
   height: 205px;
   top: 411px;
   left: 20px;
-  background-image: url(./img/rectangle-1371.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle\ 1371.png);
   background-size: 100% 100%;
 }
 
@@ -370,7 +371,7 @@
 }
 
 .screen .text-wrapper-8 {
-  font-size: 15.3px;
+  font-size: 13.3px;
   letter-spacing: -0.09px;
 }
 
@@ -562,7 +563,7 @@
   position: relative;
   width: 162px;
   height: 205px;
-  background-image: url(./img/rectangle-1372.svg);
+  background-image: url(/src/main/resources/static/image/Rectangle\ 1371.png);
   background-size: 100% 100%;
 }
 
@@ -706,4 +707,34 @@
   height: 74px;
   top: 738px;
   left: 0;
+}
+
+.button {
+  position: absolute;
+  bottom: 22px; /* 부모 요소의 아래쪽에서 20px 위로 이동 */
+  
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover; /* 이미지를 버튼 전체에 맞게 조정 */
+  background-position: center; /* 이미지를 버튼 중앙에 위치시킴 */
+  
+  
+}
+
+.left-button {
+  background-image: url(/src/main/resources/static/image/IconHome.png);
+  background-size: 100% 100%;
+  left: 101.5px; 
+  /* 부모 요소의 왼쪽에서 20px 오른쪽으로 이동 */
+  width: 28.8px;
+  height: 28.8px;
+}
+
+.right-button {
+  right: 102px; /* 부모 요소의 오른쪽에서 20px 왼쪽으로 이동 */
+  width: 23.5px;
+  height: 30px;
+  background-image: url(/src/main/resources/static/image/IconManager.png);
 }
