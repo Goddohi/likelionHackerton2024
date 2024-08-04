@@ -116,6 +116,7 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .screen .image {
@@ -214,6 +215,7 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .screen .image-2 {
@@ -240,6 +242,7 @@
   left: 20px;
   background-color: #373e46;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .screen .image-3 {
@@ -363,6 +366,7 @@
   height: 22px;
   top: 71px;
   left: 27px;
+  cursor: pointer;
 }
 
 .screen .absolute-wrapper {

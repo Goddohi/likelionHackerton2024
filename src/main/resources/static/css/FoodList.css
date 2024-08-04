@@ -75,6 +75,7 @@
   height: 22px;
   top: 71px;
   left: 27px;
+  cursor: pointer;
 }
 
 .screen .absolute-wrapper {
@@ -389,6 +390,7 @@
   left: 284px;
   background-color: #ff5f34;
   border-radius: 24.5px;
+  cursor: pointer;
 }
 
 .screen .vector-3 {
