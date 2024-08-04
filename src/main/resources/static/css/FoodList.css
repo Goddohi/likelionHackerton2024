@@ -2,8 +2,10 @@
   background-color: #1b1c1e;
   display: flex;
   flex-direction: row;
+
   justify-content: center;
-  width: 100%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 .screen .div {
@@ -120,8 +122,8 @@
   gap: 10px;
   padding: 13px 30.5px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -34px;
 }
 
 .screen .value {
@@ -146,8 +148,8 @@
   justify-content: center;
   padding: 14px;
   position: absolute;
-  top: 0;
-  left: 280px;
+  top: -15px;
+  right: -5px;
 }
 
 .screen .content-2 {
@@ -240,7 +242,7 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
 }
 
@@ -270,7 +272,7 @@
   width: 10px;
   height: 16px;
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
 }
 
@@ -419,7 +421,7 @@
 
 .screen .text-wrapper-6 {
   position: absolute;
-  top: 7px;
+  top: 0;
   left: 8px;
   font-family: "Pretendard-Medium", Helvetica;
   font-weight: 500;

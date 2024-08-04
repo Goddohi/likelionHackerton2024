@@ -13,7 +13,7 @@
         element.addEventListener('mouseover', () => {
             const textWrapper = element.querySelector('.text-wrapper-2');
             if (textWrapper) {
-                textWrapper.style.color = 'blue';
+                textWrapper.style.color = 'black';
             }
         });
         element.addEventListener('mouseout', () => {
@@ -33,7 +33,7 @@
         });
 
         button.addEventListener('mouseover', () => {
-            button.style.color = 'red'; // 삭제 버튼 색상 변경
+            button.style.color = 'black'; // 삭제 버튼 색상 변경
         });
 
         button.addEventListener('mouseout', () => {
