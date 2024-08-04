@@ -24,16 +24,17 @@ public class MemberService {
 }
      */
 
-    public Member save(Member request){
+    public Member save(Member request) {
         return memberRepository.save(request);
     }
+
     /*
         public Member create (Member member){
             return member;
         }
     */
-    public Member save(MemberForm request){
-        if (memberRepository.findByMemberId(request.getMemberId()).isEmpty()){
+    public Member save(MemberForm request) {
+        if (memberRepository.findByMemberId(request.getMemberId()).isEmpty()) {
             Member member = Member.builder()
                     .memberId(request.getMemberId())
                     .username(request.getUsername())

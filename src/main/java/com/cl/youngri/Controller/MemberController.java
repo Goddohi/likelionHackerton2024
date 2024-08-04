@@ -1,5 +1,6 @@
 package com.cl.youngri.Controller;
 
+import com.cl.youngri.Member.LoginForm;
 import com.cl.youngri.Member.Member;
 import com.cl.youngri.Member.MemberForm;
 import com.cl.youngri.Member.MemberService;
@@ -22,9 +23,9 @@ public class MemberController {
 
 
     /**
-     *  작성일 : 08.03.2024
-     *  작성자 choi
-     *  작성함수  signupForm
+     * 작성일 : 08.03.2024
+     * 작성자 choi
+     * 작성함수  signupForm
      */
     @GetMapping("signup/")
     public String signupForm(Model model) {
@@ -33,9 +34,9 @@ public class MemberController {
     }
 
     /**
-     *  작성일 : 08.03.2024
-     *  작성자 choi
-     *  작성함수  signup
+     * 작성일 : 08.03.2024
+     * 작성자 choi
+     * 작성함수  signup
      */
 
     @PostMapping("/signup/")
@@ -52,5 +53,25 @@ public class MemberController {
         }
 
         return "redirect:/"; // 회원가입 성공 시 리다이렉트
+    }
+
+    @PostMapping("/login/")
+    public String loginForm(Model model) {
+        model.addAttribute("loginForm", new LoginForm());
+        return "member/login";
+    }
+
+    public String login(@Valid LoginForm request, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "member/login";
+        }
+
+        if (member==null) //memberService.findMemberByStudenid(request.getPassword())) {
+            String errortext = "비밀번호가 잘못되었습니다.";
+            model.addAttribute("errortext", errortext);
+            return "member/login";
+        }
+        return "redirect:/";
+
     }
 }
