@@ -214,12 +214,12 @@
 
 .screen .text-wrapper-3 {
   position: absolute;
-  top: 15px;
-  left: 109px;
+  top: 12px;
+  left: 95px;
   font-family: "Pretendard-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   letter-spacing: 0;
   line-height: 24px;
@@ -254,7 +254,7 @@
 
 .screen .text-wrapper-4 {
   position: absolute;
-  top: 4px;
+  top: -2px;
   left: 71px;
   font-family: "Pretendard-SemiBold", Helvetica;
   font-weight: 600;
@@ -267,7 +267,7 @@
 
 .screen .text-wrapper-5 {
   position: absolute;
-  top: 37px;
+  top: 28px;
   left: 71px;
   font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
@@ -282,7 +282,7 @@
   position: absolute;
   width: 60px;
   height: 15px;
-  top: 2px;
+  top: -4px;
   left: 244px;
 }
 
@@ -291,7 +291,7 @@
   height: 15px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 5px;
 }
 
 .screen .text-wrapper-6 {
@@ -311,7 +311,7 @@
   position: absolute;
   width: 89px;
   height: 16px;
-  top: 32px;
+  top: 26px;
   left: 244px;
 }
 
@@ -320,7 +320,7 @@
   height: 16px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 5px;
 }
 
 .screen .text-wrapper-7 {
@@ -670,7 +670,7 @@
   left: 254px;
   background-color: #ff5f34;
   border-radius: 62px;
- 
+  cursor: pointer;
 }
 
 .screen .text-wrapper-17 {
