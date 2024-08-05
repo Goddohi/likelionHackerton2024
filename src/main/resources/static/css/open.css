@@ -1,0 +1,181 @@
+.screen {
+  background-color: #1b1c1e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen .div {
+  background-color: #1b1c1e;
+  width: 375px;
+  height: 812px;
+  position: relative;
+}
+
+.screen .image {
+  position: absolute;
+  width: 148px;
+  height: 84px;
+  top: 261px;
+  left: 114px;
+}
+
+.screen .img {
+  position: absolute;
+  width: 375px;
+  height: 342px;
+  top: 470px;
+  left: 0;
+  object-fit: cover;
+}
+
+.screen .view {
+  position: absolute;
+  width: 375px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.screen .absolute {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.screen .status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.screen .content {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 44px;
+}
+
+.screen .status-bar-time {
+  display: flex;
+  width: 93px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 30.5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen .value {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "SF SD Text-Semibold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.screen .status-bar-status {
+  display: flex;
+  width: 95px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  position: absolute;
+  top: 0;
+  left: 280px;
+}
+
+.screen .content-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 3px 0px 1px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.screen .celluar {
+  position: relative;
+  width: 18px;
+  height: 12px;
+}
+
+.screen .cellular-connection {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 1px;
+  left: 0;
+}
+
+.screen .wi-fi {
+  position: relative;
+  width: 16px;
+  height: 12px;
+}
+
+.screen .wi-fi-2 {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+
+.screen .battery {
+  position: relative;
+  width: 25px;
+  height: 12px;
+}
+
+.screen .battery-2 {
+  position: relative;
+  width: 24px;
+  height: 11px;
+}
+
+.screen .cap {
+  position: absolute;
+  width: 1px;
+  height: 4px;
+  top: 4px;
+  left: 23px;
+}
+
+.screen .overlap-group {
+  position: absolute;
+  width: 22px;
+  height: 11px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #ffffff66;
+}
+
+.screen .capacity {
+  position: relative;
+  width: 18px;
+  height: 7px;
+  top: 1px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 1.33px;
+}
