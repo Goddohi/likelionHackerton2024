@@ -626,6 +626,8 @@
   letter-spacing: -0.24px;
   line-height: normal;
   white-space: nowrap;
+  width:30px;
+  height:30px;
 }
 
 .screen .status-bar-status {
